@@ -17,7 +17,7 @@ export class Triangle implements Figure {
     private readonly c: number,
   ) {
     if (a <= 0 || b <= 0 || c <= 0) {
-      throw new Error('sides must be > 0');
+      throw new Error('All triangle side lengths must be positive numbers');
     }
 
     const max = Math.max(a, b, c);
@@ -42,7 +42,7 @@ export class Circle implements Figure {
     private readonly radius: number,
   ) {
     if (radius <= 0) {
-      throw new Error('radius must be > 0');
+      throw new Error('The radius of a circle must be a positive number.');
     }
   }
 
