@@ -62,7 +62,7 @@ export class Rectangle implements Figure {
     private readonly height: number,
   ) {
     if (width <= 0 || height <= 0) {
-      throw new Error('width and height must be > 0');
+      throw new Error('Width and height of rectangle must be positive numbers');
     }
   }
 
